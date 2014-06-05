@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical">
+    
+    <View
+        android:id="@+id/color"
+        android:layout_width="10dp"
+        android:layout_height="match_parent" />
+    
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="5dp"
+        android:gravity="center_vertical">
+    
+	    <TextView
+	        android:id="@+id/name"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:textSize="18sp"
+			android:textColor="@color/dark_text"
+			android:textStyle="bold"
+			android:ellipsize="end" />
+	    
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="10dp"
+	        android:textSize="14sp"
+	        android:textColor="@color/green_text"
+	        android:textStyle="bold"
+	        android:text="@string/treat_as_miss" />
+	    
+	    <ToggleButton 
+	        android:id="@+id/absent" 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="5dp"
+	        android:focusable="false"
+	        android:textOn="@string/on"
+	        android:textOff="@string/off" />
+    
+    </LinearLayout>
+
+</LinearLayout>

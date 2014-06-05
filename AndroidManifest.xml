@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.thepegeek.easyattendance"
+    android:versionCode="2"
+    android:versionName="1.1" 
+    android:installLocation="auto">
+    
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="17" />
+    
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+        <activity
+            android:name=".screen.SplashScreen"
+            android:clearTaskOnLaunch="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name=".screen.MainScreen"
+            android:clearTaskOnLaunch="true"
+            android:screenOrientation="portrait" />
+        
+        <activity
+            android:name=".screen.PasscodeScreen"
+            android:screenOrientation="portrait" />
+        
+        <activity
+            android:name=".screen.SelectCourseScreen"
+            android:screenOrientation="portrait" />
+        
+        <activity
+            android:name=".screen.CoursesScreen"
+            android:screenOrientation="portrait" />
+        
+        <activity
+            android:name=".screen.RandomStudentScreen"
+            android:screenOrientation="portrait" />
+        
+        <activity
+            android:name=".screen.ReportScreen"
+            android:screenOrientation="portrait" />
+        
+        <activity
+            android:name=".screen.SettingsScreen"
+            android:screenOrientation="portrait" />
+        
+        <activity
+            android:name=".screen.CourseStudentsScreen"
+            android:screenOrientation="portrait" />
+        
+        <activity
+            android:name=".screen.StatusesScreen"
+            android:screenOrientation="portrait" />
+        
+        <activity 
+            android:name=".screen.StudentDetailsScreen"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        
+        <activity
+            android:name=".screen.LabelsScreen"
+            android:screenOrientation="portrait" />
+        
+        <activity
+            android:name=".screen.ObservationsScreen"
+            android:screenOrientation="portrait" />
+        
+        <activity
+            android:name=".screen.EditObservationScreen"
+            android:screenOrientation="portrait" />
+        
+        <activity
+            android:name=".screen.AttendancesScreen"
+            android:screenOrientation="portrait" />
+        
+        <activity
+            android:name=".screen.AttendanceScreen"
+            android:screenOrientation="portrait" />
+        
+        <activity
+            android:name=".screen.NoteScreen"
+            android:screenOrientation="portrait" />
+        
+        <activity
+            android:name=".screen.SelectCourse2Screen"
+            android:screenOrientation="portrait" />
+        
+        <activity
+            android:name=".screen.GroupOptionsScreen"
+            android:screenOrientation="portrait" />
+        
+        <activity
+            android:name=".screen.GroupsScreen"
+            android:screenOrientation="portrait" />
+        
+        <activity
+            android:name=".screen.AttendanceDetailsScreen"
+            android:screenOrientation="portrait" />
+        
+        <activity
+            android:name=".screen.DropboxScreen"
+            android:screenOrientation="portrait" />
+        
+        <activity
+            android:name="com.dropbox.client2.android.AuthActivity"
+            android:launchMode="singleTask"
+            android:configChanges="orientation|keyboard">
+	      	<intent-filter>
+		        <data android:scheme="db-zv59agobd4zmclu" />
+		        <action android:name="android.intent.action.VIEW" />
+		        <category android:name="android.intent.category.BROWSABLE"/>
+		        <category android:name="android.intent.category.DEFAULT" />
+	      	</intent-filter>
+	    </activity>
+        
+    </application>
+
+</manifest>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+    <!-- <include layout="@layout/titlebar_layout" /> -->
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="@drawable/background">
+        
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/header_view"
+            android:textSize="14sp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:padding="5dp"
+            android:gravity="center_horizontal"
+            android:text="@string/text_note" />
+        
+        <EditText 
+            android:id="@+id/note"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:singleLine="false"
+            android:gravity="top|left"
+            android:textColor="@color/dark_text"
+            android:background="@drawable/container_background" />
+        
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/header_view"
+            android:textSize="14sp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:padding="5dp"
+            android:gravity="center_horizontal"
+            android:text="@string/image_note" />
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="10dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/container_background">
+            
+            <ImageView
+                android:id="@+id/photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:background="@drawable/frame_background"
+                android:src="@drawable/no_photo" />
+                
+            <Button
+	            android:id="@+id/addPhotoBtn"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="10dp"
+	            android:background="@drawable/btn_green"
+	            android:textColor="@android:color/white"
+	            android:textStyle="bold"
+	            android:text="@string/add_replace_photo" />
+            
+        </LinearLayout>
+        
+    </LinearLayout>
+
+</LinearLayout>

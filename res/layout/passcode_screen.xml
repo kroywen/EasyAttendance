@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+    <!-- <include layout="@layout/titlebar_layout" /> -->
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="@drawable/background">
+        
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:gravity="center_horizontal"
+            android:textSize="20sp"
+            android:textColor="@color/green_text"
+            android:textStyle="bold" 
+            android:text="@string/enter_your_passcode" />
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+            
+            <EditText 
+                android:id="@+id/first"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:password="true"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:maxLength="1" />
+            
+            <EditText 
+                android:id="@+id/second"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:inputType="number"
+                android:password="true"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:maxLength="1" />
+            
+            <EditText 
+                android:id="@+id/third"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:inputType="number"
+                android:password="true"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:maxLength="1" />
+            
+            <EditText 
+                android:id="@+id/forth"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:inputType="number"
+                android:password="true"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:maxLength="1" />
+            
+        </LinearLayout>
+        
+    </LinearLayout>
+
+</LinearLayout>

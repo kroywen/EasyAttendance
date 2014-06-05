@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+    <!-- <include layout="@layout/titlebar_layout" /> -->
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="@drawable/background">
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="10dp"
+            android:background="@drawable/container_background">
+            
+            <Button
+                android:id="@+id/addNoteBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/btn_green"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:text="@string/add_note" />
+            
+            <Button
+                android:id="@+id/communicateBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/btn_green"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:text="@string/communicate" />
+            
+        </LinearLayout>
+        
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/header_view"
+            android:textSize="14sp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:padding="5dp"
+            android:gravity="center_horizontal"
+            android:text="@string/enrolled" />
+        
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            
+            <ListView
+	            android:id="@+id/studentsList"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent" 
+	            android:listSelector="@drawable/list_item_background"
+	            android:cacheColorHint="@android:color/transparent" 
+	            android:divider="@drawable/list_item_divider"/>
+            
+            <TextView
+	            android:id="@+id/empty"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:padding="10dp"
+	            android:layout_centerInParent="true"
+	            android:textColor="@color/dark_text"
+	            android:textSize="18sp"
+	            android:textStyle="bold"
+	            android:gravity="center_horizontal"
+	            android:text="@string/empty_students_min" />
+            
+        </RelativeLayout>
+        
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <!-- <include layout="@layout/titlebar_layout" /> -->
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="@drawable/background">
+        
+        <ImageView
+			android:id="@+id/photo"
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_weight="1"
+			android:layout_marginLeft="40dp"
+			android:layout_marginRight="40dp"
+			android:layout_marginTop="70dp"
+			android:layout_marginBottom="20dp"
+			android:background="@drawable/frame_background"
+			android:src="@drawable/no_photo" />
+        
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/header_view"
+            android:textSize="14sp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:padding="5dp"
+            android:gravity="center_horizontal" />
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/container_background">
+            
+            <Button
+                android:id="@+id/nextStudentBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_green"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:text="@string/next_student" />
+            
+        </LinearLayout>
+        
+    </LinearLayout>
+
+</LinearLayout>

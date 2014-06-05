@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Easy Attendance</string>
+	<string name="take">Take</string>
+	<string name="add_view">Add/View</string>
+	<string name="random">Random</string>
+	<string name="report">Report</string>
+	<string name="info">Info</string>
+	<string name="add_view_courses">Add/View Courses</string>
+	<string name="add_course">Add Course</string>
+	<string name="statuses">Statuses</string>
+	<string name="status">Status</string>
+	<string name="courses">Courses</string>
+	<string name="students_count_pattern">%d Student(s)</string>
+	<string name="add_student">Add Student</string>
+	<string name="options">Options</string>
+	<string name="email_report">Email Report</string>
+	<string name="dropbox_report">Dropbox Report</string>
+	<string name="attendance_details">Attendance Details</string>
+	<string name="enrolled">Enrolled</string>
+	<string name="student_details">Student Details</string>
+	<string name="add_replace_photo">Add/Replace Photo</string>
+	<string name="add_more_details">Add More Details</string>	    
+	<string name="details">Details</string>
+	<string name="delete_student">Delete Student</string>
+	<string name="labels">Labels</string>
+	<string name="add_label">Add Label</string>
+	<string name="add_custom_label">Add Custom Label</string>
+	<string name="user_labels">User Labels</string>
+	<string name="call_number_pattern">Call %s?</string>
+	<string name="call">Call</string>
+	<string name="cancel">Cancel</string>
+	<string name="new_grouping_option">New Grouping Option</string>
+	<string name="add_new_grouping_option">Add New Grouping Option</string>
+	<string name="grouping_options">Grouping Options</string>
+	<string name="random_student">Random Student</string>
+	<string name="groups_even_pattern">Groups of %d</string>
+	<string name="groups_uneven_pattern">Groups of %d - Uneven groups</string>
+	<string name="group_count_pattern">Group %d</string>
+	<string name="new_option">New Option</string>
+	<string name="add">Add</string>
+	<string name="groups_of">Groups of</string>
+	<string name="next_student">Next Student</string>
+	<string name="attendance">Attendance</string>
+	<string name="attendances_count_pattern">%d Attendance(s)</string>
+	<string name="add_attendance">Add Attendance</string>
+	<string name="missed_classes">Missed classes</string>
+	<string name="previous_attendances">Previous Attendances</string>
+	<string name="select_date">Select Date</string>
+	<string name="select_time">Select Time</string>
+	<string name="add_note">Add Note</string>
+	<string name="communicate">Communicate</string>
+	<string name="present">Present</string>
+	<string name="absent">Absent</string>
+	<string name="no_change">No Change</string>
+	<string name="injured">Injured</string>
+	<string name="excused">Excused</string>
+	<string name="late">Late</string>
+	<string name="notes">Notes</string>
+	<string name="text_note">Text Note</string>
+	<string name="image_note">Image Note</string>
+	<string name="add_status">Add Status</string>
+	<string name="treat_as_miss">Treat As Miss</string>
+	<string name="edit">Edit</string>
+	<string name="on">ON</string>
+	<string name="off">OFF</string>
+	<string name="_default">Default</string>
+	<string name="user">User</string>
+	<string name="empty_labels">You haven\'t added any label yet</string>
+	<string name="empty_students">No students added yet. You can add students manually, from other course or import from csv file in dropbox.</string>
+	<string name="empty_courses">You haven\'t added any course yet</string>
+	<string name="full_name">Full Name</string>
+	<string name="select_option">Select Option</string>
+	<string name="no_camera_detected">Your device don\'t have camera feature</string>
+	<string name="error">Error</string>
+	<string name="ok">OK</string>
+	<string name="no_app">No application can perform this action</string>
+	<string name="confirm_delete_student_pattern">Are you sure you want to delete %s?</string>
+	<string name="enter_your_passcode">Enter your passcode</string>
+	<string name="enter_passcode">Enter Passcode</string>
+	<string name="invalid_passcode">Invalid code</string>
+	<string name="new_course">New Course</string>
+	<string name="course_name">Course name</string>
+	<string name="course_name_empty">Course name can\'t be empty</string>
+	<string name="delete">Delete</string>
+	<string name="_import">Import</string>
+	<string name="sort">Sort</string>
+	<string name="firstname_lastname">FirstName LastName</string>
+	<string name="add_student_text">Tip: You can separate names with comma.\nFirst name must come first.</string>
+	<string name="student_name_empty">Student name can\'t be empty</string>
+	<string name="import_students">Import Students</string>
+	<string name="first_name">First Name</string>
+	<string name="last_name">Last Name</string>
+	<string name="observations">Observations</string>
+	<string name="records_count_pattern">%d Record(s)</string>
+	<string name="add_observation">Add Observation</string>
+	<string name="empty_observations">No observations recorded yet. You can add an observation by pressing button at the top.</string>
+	<string name="new_observation">New Observation</string>
+	<string name="save">Save</string>
+	<string name="date">Date</string>
+	<string name="text">Text</string>
+	<string name="email_subject_pattern">%1$s Observation (%2$s)</string>
+	<string name="email_app_select">Select Email Application</string>
+	<string name="common">Common</string>
+	<string name="user_created">User created</string>
+	<string name="tap_and_hold">Tap and hold on status to set it as default</string>
+	<string name="new_status">New Status</string>
+	<string name="status_name">Status name</string>
+	<string name="status_name_empty">Status name can\'t be empty</string>
+	<string name="name_will_be_autocapitalized">Name will be autocapitalized.</string>
+	<string name="set_as_default">Set As Default</string>
+	<string name="change_color">Change Color</string>
+	<string name="empty_attendances">You haven\'t added any attendances yet.</string>
+	<string name="set_time">Set Time</string>
+	<string name="empty_students_min">No students added yet.</string>
+	<string name="select_course">Select Course</string>
+	<string name="groups">Groups</string>
+	<string name="empty_grouping_options">You haven\'t added any grouping option yet.</string>
+	<string name="refresh">Refresh</string>
+	<string name="label_name_empty">Label name can\'t be empty</string>
+	<string name="support_email_message">\n\nRegards\nThe PE Geek Apps\nSupport Team</string>
+	<string name="settings_and_support">Settings And Support</string>
+	<string name="settings">Settings</string>
+	<string name="link_to_dropbox">Link To Dropbox</string>
+	<string name="unlink_from_dropbox">Unlink From Dropbox</string>
+	<string name="name_format">Name Format</string>
+	<string name="passcode_lock">Passcode Lock</string>
+	<string name="support">Support</string>
+	<string name="more_apps">More Apps</string>
+	<string name="invalid_passcode_format">Passcode format is invalid. It should be 4 digits.</string>
+	<string name="only_one_course">It is the only course</string>
+	<string name="all_students_present">All students from this course are already imported.</string>
+	<string name="select_students">Select students</string>
+	<string name="every_attendance">Every Attendance</string>
+	<string name="between_dates">Between Dates</string>
+	<string name="all_courses">All Courses</string>
+	<string name="export">Export:</string>
+	<string name="to">To</string>
+	<string name="nothing_to_export">Nothing to export</string>
+	<string name="please_wait">Please wait &#8230;</string>
+	<string name="send_email">Send Email via:</string>
+	<string name="full">Full</string>
+	<string name="summary">Summary</string>
+	<string name="upload_error">An error occurred while uploading files</string>
+	<string name="social">Social</string>
+	<string name="twitter_page">Twitter Page</string>
+	<string name="twitter_link">https://twitter.com/thepegeekapps</string>
+	<string name="facebook_page">Facebook Page</string>
+	<string name="facebook_link">http://www.facebook.com/thepegeekapps</string>
+	<string name="google_plus_page">Google+ Page</string>
+	<string name="google_plus_link">https://plus.google.com/110459739920856389892</string>
+	<string name="tell_prewritten_message">Checkout the apps by The PE Geek on the Google Play Store <a>https://play.google.com/store/apps/developer?id=The+PE+Geek&amp;hl=en</a></string>
+	<!-- <string name="tell_prewritten_message">Checkout the Easy Attendance app on <a>http://thepegeekapps.com/attendance/</a></string> -->
+    <string name="report_bug_template">Please describe steps to reproduce a bug:\n\n---------\nDevice: %1$s %2$s;\nOS Version: %3$s</string>
+    <string name="no_missed_classes">There were no absent data for this course</string>
+    <string name="no_missed_classes_in_attendance">There were no absent data for this attendance</string>
+    <string name="status_is_used">This status can\'t be deleted, it\'s used</string>
+    <string name="empty_attendance_details">This student hasn\'t taken part in any attendance.</string>
+    <string name="importing">Importing &#8230;</string>
+    <string name="no_connection">No internet connection</string>
+    <string name="my_dropbox">My Dropbox</string>
+    <string name="download">Download</string>
+    <string name="selected_pattern">%1$d File(s) Selected</string>
+    <string name="close">Close</string>
+    <string name="no_files_selected">Please select files to be downloaded</string>
+    <string name="loading">Loading &#8230;</string>
+    <string name="downloading">Downloading &#8230;</string>
+    <string name="download_error">An error occurred while downloading files</string>
+    <string name="download_pattern">Downloading %1$s\n%2$s out of %3$s</string>
+    <string name="information">Information</string>
+    <string name="dropbox_dialog_info_test">All fields from csv files will be added, make sure you have deleted unnecessary fields.</string>
+    <string name="add_image_error">Error while saving image</string>
+    <string name="uploading">Uploading &#8230;</string>
+    <string name="upload_pattern">Uploading %1$s\n%2$s out of %3$s</string>
+    <string name="success">Success</string>
+    <string name="csv_uploaded">File was uploaded successfuly.</string>
+    <string name="start_date">Start Date</string>
+    <string name="hour">hour</string>
+    <string name="min">min</string>    
+	
+	<string name="contact_us">Contact Us</string>
+    <string name="visit_our_website">Visit Our Website</string>
+    <string name="rate_this_application">Rate This Application</string>
+    <string name="report_a_bug">Report A Bug</string>
+    <string name="tell_a_friend">Tell A Friend</string>
+    
+    <string name="easy_assessment">Easy Assessment</string>
+    <string name="easy_pd">Easy PD</string>
+    <string name="easy_portfolio">Easy Portfolio</string>
+    
+    
+    <string name="easy_assessment_link">https://play.google.com/store/apps/details?id=com.thepegeekapps.easyassessment</string>
+    <string name="easy_pd_link">https://play.google.com/store/apps/details?id=com.thepegeekapps.easypd</string>
+    <string name="easy_portfolio_link">https://play.google.com/store/apps/details?id=com.thepegeekapps.easyportfolio</string>
+     
+    <!-- 
+    <string name="easy_assessment_link">http://www.amazon.com/Easy&#8211;Assessment&#8211;Rubric&#8211;Creation&#8211;Teachers/dp/B00C7O1MC2/ref=sr_1_4</string>
+    <string name="easy_pd_link">http://www.amazon.com/The&#8211;PE&#8211;Geek&#8211;Professional&#8211;Development/dp/B00C7O0LK6/ref=sr_1_3</string>
+    <string name="easy_portfolio_link">http://www.amazon.com/Easy&#8211;Portfolio&#8211;ePortfolio&#8211;Students&#8211;Teachers/dp/B00C7O2XPM/ref=sr_1_5</string>
+    -->
+    
+    <string name="easy_assessment_desc">The easiest way to access students in any task. Attach video and images to support your assessment.</string>
+    <string name="easy_pd_desc">Keep track of your professional development hours.</string>
+    <string name="easy_portfolio_desc">Easiest way to capture evidence of learning within a portfolio. Simply setup a portfolio for each student and add records demonstrating their accomplishments.</string>
+	
+	<string-array name="default_statuses">
+	    <item>Present</item>
+	    <item>Absent</item>
+	    <item>Late</item>
+	    <item>Excused</item>
+	</string-array>
+	
+	<string-array name="add_photo_options">
+	    <item>Take Photo</item>
+	    <item>Select From Library</item>
+	    <item>Remove Photo</item>
+	</string-array>
+	
+	<string-array name="import_student_options">
+	    <item>From Another Course</item>
+	    <item>From CSV</item>
+	    <!-- <item>Show Example CSV</item> -->
+	</string-array>
+	
+	<string-array name="group_count">
+	    <item>2</item><item>3</item><item>4</item><item>5</item><item>6</item><item>7</item><item>8</item><item>9</item><item>10</item>
+	    <item>11</item><item>12</item><item>13</item><item>14</item><item>15</item><item>16</item><item>17</item><item>18</item><item>19</item><item>20</item>
+	    <item>21</item><item>22</item><item>23</item><item>24</item><item>25</item><item>26</item><item>27</item><item>28</item><item>29</item><item>30</item>
+	</string-array>
+	
+	<string-array name="report_options">
+	    <item>Email Full Report</item>
+	    <item>Email Summary Report</item>
+	    <item>Dropbox Full Report</item>
+	    <item>Dropbox Summary Report</item>
+	</string-array>
+	
+	<string-array name="missed_classes_options">
+	    <item>Export via Email</item>
+	    <item>Export to Dropbox</item>
+	</string-array>
+	
+	<string-array name="communicate_options">
+	    <item>Email Day Report</item>
+	    <item>Email Missing Report</item>
+	    <item>Email Attendance Report</item>
+	    <item>Dropbox Day Report</item>
+	    <item>Dropbox Missing Report</item>
+	    <item>Dropbox Attendance Report</item>
+	</string-array>
+
+</resources>

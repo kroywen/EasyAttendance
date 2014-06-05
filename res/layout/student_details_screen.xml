@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+    <!-- <include layout="@layout/titlebar_layout" /> -->
+    
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/background">
+        
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/header_view"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            android:padding="5dp" />
+        
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:padding="10dp"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/container_background">
+            
+			<ImageView
+				android:id="@+id/photo"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:background="@drawable/frame_background"
+				android:src="@drawable/no_photo" />
+            
+            <LinearLayout 
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical">
+                
+                <Button
+	                android:id="@+id/addPhotoBtn"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:background="@drawable/btn_green"
+	                android:textColor="@android:color/white"
+	                android:textStyle="bold"
+	                android:text="@string/add_replace_photo" />
+                
+                <Button
+	                android:id="@+id/addLabelBtn"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_marginTop="5dp"
+	                android:background="@drawable/btn_green"
+	                android:textColor="@android:color/white"
+	                android:textStyle="bold"
+	                android:text="@string/add_more_details" />
+                
+            </LinearLayout>
+            
+        </LinearLayout>
+        
+        <TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="@drawable/header_view"
+			android:textSize="14sp"
+			android:textColor="@android:color/white"
+			android:textStyle="bold"
+			android:padding="5dp"
+			android:gravity="center_horizontal"
+			android:text="@string/details" />
+        
+        <LinearLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:gravity="center_vertical" 
+		    android:padding="5dp"
+		    android:background="@drawable/list_item_background">
+		    
+		    <TextView
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1"
+		        android:textColor="@color/dark_text"
+		        android:textSize="13sp"
+		        android:textStyle="bold"
+		        android:paddingRight="10dp"
+		        android:gravity="right"
+		        android:ellipsize="end"
+		        android:text="@string/first_name" />
+		        
+		    <EditText
+		        android:id="@+id/firstname"
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="3"
+		        android:singleLine="true"
+		        android:lines="1"
+		        android:maxLines="1"
+		        android:textColor="@color/dark_text" />
+		
+		</LinearLayout>
+		
+        <View style="@style/ListDivider" />
+		
+        <LinearLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:gravity="center_vertical" 
+		    android:padding="5dp"
+		    android:background="@drawable/list_item_background">
+		    
+		    <TextView
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1"
+		        android:textColor="@color/dark_text"
+		        android:textSize="13sp"
+		        android:textStyle="bold"
+		        android:paddingRight="10dp"
+		        android:gravity="right"
+		        android:ellipsize="end"
+		        android:text="@string/last_name" />
+		        
+		    <EditText
+		        android:id="@+id/lastname"
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="3"
+		        android:singleLine="true"
+		        android:lines="1"
+		        android:maxLines="1"
+		        android:textColor="@color/dark_text" />
+		
+		</LinearLayout>
+		
+        <LinearLayout 
+            android:id="@+id/labelsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            
+        </LinearLayout>
+        
+        <TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="@drawable/header_view"
+			android:textSize="14sp"
+			android:textColor="@android:color/white"
+			android:textStyle="bold"
+			android:padding="5dp"
+			android:gravity="center_horizontal"
+			android:text="@string/observations" />
+        
+        <LinearLayout
+            android:id="@+id/observations"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+		    android:paddingRight="5dp"
+		    android:paddingTop="10dp"
+		    android:paddingBottom="10dp"
+		    android:gravity="center_vertical"
+		    android:background="@drawable/list_item_background">
+		    
+            <TextView 
+			    android:layout_width="0dp"
+			    android:layout_height="wrap_content"
+			    android:layout_weight="1"
+			    android:textColor="@color/dark_text"
+			    android:textSize="18sp"
+			    android:textStyle="bold" 
+			    android:text="@string/observations" />
+            
+            <TextView
+	            android:id="@+id/observationsCount"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="10dp"
+	            android:textSize="14sp"
+	            android:textColor="@color/green_text"
+	            android:textStyle="bold"
+	            android:text="@string/records_count_pattern" />
+            
+            <ImageView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="10dp"
+		        android:src="@drawable/cell_accessory" />
+            
+        </LinearLayout>
+        
+        <TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="@drawable/header_view"
+			android:textSize="14sp"
+			android:textColor="@android:color/white"
+			android:textStyle="bold"
+			android:padding="5dp"
+			android:gravity="center_horizontal"
+			android:text="@string/options" />
+        
+        <TextView 
+		    android:id="@+id/emailReport"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:paddingLeft="5dp"
+		    android:paddingRight="5dp"
+		    android:paddingTop="10dp"
+		    android:paddingBottom="10dp"
+		    android:textColor="@color/dark_text"
+		    android:textSize="18sp"
+		    android:textStyle="bold" 
+		    android:drawableRight="@drawable/cell_accessory"
+		    android:background="@drawable/list_item_background"
+		    android:text="@string/email_report" />
+        
+        <View style="@style/ListDivider" />
+        
+        <TextView 
+		    android:id="@+id/dropboxReport"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:paddingLeft="5dp"
+		    android:paddingRight="5dp"
+		    android:paddingTop="10dp"
+		    android:paddingBottom="10dp"
+		    android:textColor="@color/dark_text"
+		    android:textSize="18sp"
+		    android:textStyle="bold" 
+		    android:drawableRight="@drawable/cell_accessory"
+		    android:background="@drawable/list_item_background"
+		    android:text="@string/dropbox_report" />
+        
+        <View style="@style/ListDivider" />
+        
+        <TextView 
+		    android:id="@+id/attendanceDetails"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:paddingLeft="5dp"
+		    android:paddingRight="5dp"
+		    android:paddingTop="10dp"
+		    android:paddingBottom="10dp"
+		    android:textColor="@color/dark_text"
+		    android:textSize="18sp"
+		    android:textStyle="bold" 
+		    android:drawableRight="@drawable/cell_accessory"
+		    android:background="@drawable/list_item_background"
+		    android:text="@string/attendance_details" />
+        
+        <View style="@style/ListDivider" /> 
+        
+       <Button
+            android:id="@+id/deleteBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/btn_red"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:text="@string/delete_student" /> 
+        
+    </LinearLayout>
+    
+    </ScrollView>
+
+</LinearLayout>

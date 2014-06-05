@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <!-- <include layout="@layout/titlebar_layout" /> -->
+    
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/background">
+        
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/header_view"
+            android:textSize="14sp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:padding="5dp"
+            android:gravity="center_horizontal"
+            android:text="@string/settings" />
+        
+        <TextView 
+		    android:id="@+id/dropboxLink"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:paddingLeft="5dp"
+		    android:paddingRight="5dp"
+		    android:paddingTop="10dp"
+		    android:paddingBottom="10dp"
+		    android:textColor="@color/dark_text"
+		    android:textSize="18sp"
+		    android:textStyle="bold"
+		    android:gravity="center_vertical"
+		    android:drawablePadding="10dp" 
+		    android:drawableRight="@drawable/cell_accessory"
+		    android:drawableLeft="@drawable/dropbox_icon"
+		    android:clickable="true"
+		    android:background="@drawable/list_item_background" />
+        
+        <View 
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/list_item_divider" />
+        
+        <!-- 
+        <LinearLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:gravity="center_vertical" 
+		    android:padding="5dp"
+		    android:clickable="true"
+		    android:background="@drawable/list_item_background">
+		    
+		    <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textColor="@color/dark_text"
+		        android:textSize="15sp"
+		        android:textStyle="bold"
+		        android:layout_marginRight="10dp"
+		        android:text="@string/name_format" />
+		        
+		    <EditText
+		        android:id="@+id/nameFormat"
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1"
+		        android:singleLine="true"
+		        android:lines="1"
+		        android:maxLines="1"
+		        android:textColor="@color/dark_text"
+		        android:text="FFF LLL" />
+		
+		</LinearLayout>
+		
+        <View 
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/list_item_divider" />
+            
+        -->
+        
+        <LinearLayout
+            android:id="@+id/passcodeLayout"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:gravity="center_vertical" 
+		    android:paddingTop="10dp"
+		    android:paddingBottom="10dp"
+		    android:paddingLeft="5dp"
+		    android:paddingRight="5dp"
+		    android:clickable="true"
+		    android:background="@drawable/list_item_background">
+		    
+            <TextView 
+			    android:layout_width="0dp"
+			    android:layout_height="wrap_content"
+			    android:layout_weight="1"
+			    android:textColor="@color/dark_text"
+			    android:textSize="18sp"
+			    android:textStyle="bold"
+			    android:text="@string/passcode_lock" />
+            
+            <TextView
+                android:id="@+id/passcodeSwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/green_text"
+                android:textSize="18sp"
+                android:text="@string/on" />
+            
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/cell_accessory" />
+		    
+        </LinearLayout>
+        
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/header_view"
+            android:textSize="14sp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:padding="5dp"
+            android:gravity="center_horizontal"
+            android:text="@string/support" />
+        
+        <TextView
+	        android:id="@+id/contactUs"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:textColor="@color/dark_text"
+	        android:textSize="18sp"
+	        android:textStyle="bold"
+	        android:clickable="true"
+	        android:padding="5dp"
+	        android:drawablePadding="10dp"
+	        android:drawableLeft="@drawable/contact_us_icon"
+	        android:gravity="left|center_vertical"
+	        android:drawableRight="@drawable/cell_accessory"
+	        android:background="@drawable/list_item_background"
+	        android:text="@string/contact_us" />
+        
+	    <View 
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/list_item_divider" />
+	    
+	    <TextView
+	        android:id="@+id/visitWebsite"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:textColor="@color/dark_text"
+	        android:textSize="18sp"
+	        android:textStyle="bold"
+	        android:clickable="true"
+	        android:padding="5dp"
+	        android:drawablePadding="10dp"
+	        android:drawableLeft="@drawable/visit_site_icon"
+	        android:gravity="left|center_vertical"
+	        android:drawableRight="@drawable/cell_accessory"
+	        android:background="@drawable/list_item_background"
+	        android:text="@string/visit_our_website" />
+	    
+	    <View 
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/list_item_divider" />
+	    
+	    <TextView
+	        android:id="@+id/reportBug"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:textColor="@color/dark_text"
+	        android:textSize="18sp"
+	        android:textStyle="bold"
+	        android:clickable="true"
+	        android:padding="5dp"
+	        android:drawablePadding="10dp"
+	        android:drawableLeft="@drawable/bug_icon"
+	        android:gravity="left|center_vertical"
+	        android:drawableRight="@drawable/cell_accessory"
+	        android:background="@drawable/list_item_background"
+	        android:text="@string/report_a_bug" />
+	    
+	    <View 
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/list_item_divider" />
+	    
+	    <TextView
+	        android:id="@+id/tellFriend"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:textColor="@color/dark_text"
+	        android:textSize="18sp"
+	        android:textStyle="bold"
+	        android:clickable="true"
+	        android:padding="5dp"
+	        android:drawablePadding="10dp"
+	        android:drawableLeft="@drawable/contact_us_icon"
+	        android:gravity="left|center_vertical"
+	        android:drawableRight="@drawable/cell_accessory"
+	        android:background="@drawable/list_item_background"
+	        android:text="@string/tell_a_friend" />
+	    
+	    
+	    
+	    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/header_view"
+            android:textSize="14sp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:padding="5dp"
+            android:gravity="center_horizontal"
+            android:text="@string/more_apps" />
+	    
+	    <LinearLayout android:id="@+id/easyAssessment" style="@style/OtherAppWrapper" android:tag="@string/easy_assessment_link">
+	        <ImageView style="@style/OtherAppImage" android:src="@drawable/easy_assessment" />
+	        <LinearLayout style="@style/OtherAppInner">
+	            <TextView style="@style/OtherAppTitle" android:text="@string/easy_assessment" />
+	            <TextView style="@style/OtherAppDescription" android:text="@string/easy_assessment_desc" />
+	        </LinearLayout>
+	    </LinearLayout>
+	    
+	    <View 
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/list_item_divider" />
+	    
+	    <LinearLayout android:id="@+id/easyPD" style="@style/OtherAppWrapper" android:tag="@string/easy_pd_link">
+	        <ImageView style="@style/OtherAppImage" android:src="@drawable/easy_pd" />
+	        <LinearLayout style="@style/OtherAppInner">
+	            <TextView style="@style/OtherAppTitle" android:text="@string/easy_pd" />
+	            <TextView style="@style/OtherAppDescription" android:text="@string/easy_pd_desc" />
+	        </LinearLayout>
+	    </LinearLayout>
+	    
+	    <View 
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/list_item_divider" />
+	    
+	    <LinearLayout android:id="@+id/easyPortfolio" style="@style/OtherAppWrapper" android:tag="@string/easy_portfolio_link">
+	        <ImageView style="@style/OtherAppImage" android:src="@drawable/easy_portfolio" />
+	        <LinearLayout style="@style/OtherAppInner">
+	            <TextView style="@style/OtherAppTitle" android:text="@string/easy_portfolio" />
+	            <TextView style="@style/OtherAppDescription" android:text="@string/easy_portfolio_desc" />
+	        </LinearLayout>
+	    </LinearLayout>
+	    
+	     
+	    
+	    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/header_view"
+            android:textSize="14sp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:padding="5dp"
+            android:gravity="center_horizontal"
+            android:text="@string/social" />
+	    
+	    <TextView
+	        android:id="@+id/twitterPage"
+	        android:tag="@string/twitter_link"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:textColor="@color/dark_text"
+	        android:textSize="18sp"
+	        android:textStyle="bold"
+	        android:clickable="true"
+	        android:padding="5dp"
+	        android:drawablePadding="10dp"
+	        android:drawableLeft="@drawable/twitter_logo"
+	        android:gravity="left|center_vertical"
+	        android:drawableRight="@drawable/cell_accessory"
+	        android:background="@drawable/list_item_background"
+	        android:text="@string/twitter_page" />
+	    
+	    <View 
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/list_item_divider" />
+	    
+	    <TextView
+	        android:id="@+id/facebookPage"
+	        android:tag="@string/facebook_link"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:textColor="@color/dark_text"
+	        android:textSize="18sp"
+	        android:textStyle="bold"
+	        android:clickable="true"
+	        android:padding="5dp"
+	        android:drawablePadding="10dp"
+	        android:drawableLeft="@drawable/facebook_logo"
+	        android:gravity="left|center_vertical"
+	        android:drawableRight="@drawable/cell_accessory"
+	        android:background="@drawable/list_item_background"
+	        android:text="@string/facebook_page" />
+	    
+	    <View 
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/list_item_divider" />
+	    
+	    <TextView
+	        android:id="@+id/googlePlusPage"
+	        android:tag="@string/google_plus_link"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:textColor="@color/dark_text"
+	        android:textSize="18sp"
+	        android:textStyle="bold"
+	        android:clickable="true"
+	        android:padding="5dp"
+	        android:drawablePadding="10dp"
+	        android:drawableLeft="@drawable/google_plus_logo"
+	        android:gravity="left|center_vertical"
+	        android:drawableRight="@drawable/cell_accessory"
+	        android:background="@drawable/list_item_background"
+	        android:text="@string/google_plus_page" />
+        
+    </LinearLayout>
+    
+    </ScrollView>
+
+</LinearLayout>
